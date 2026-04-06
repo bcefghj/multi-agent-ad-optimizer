@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: multi-agent-ad-optimizer
+
+# ClickHouse
+clickhouse:
+  host: ${CLICKHOUSE_HOST:localhost}
+  port: ${CLICKHOUSE_HTTP_PORT:8123}
+  database: ${CLICKHOUSE_DATABASE:ad_optimizer}
+  username: ${CLICKHOUSE_USER:default}
+  password: ${CLICKHOUSE_PASSWORD:}
+
+# Redis
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+
+# LLM
+llm:
+  openai:
+    api-key: ${OPENAI_API_KEY:}
+    model: ${OPENAI_MODEL:gpt-4o-mini}
+
+# 运行模式
+app:
+  run-mode: ${RUN_MODE:mock}

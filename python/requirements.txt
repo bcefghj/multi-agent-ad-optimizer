@@ -1,0 +1,17 @@
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-core>=0.3.0
+pydantic>=2.0
+clickhouse-connect>=0.7.0
+redis>=5.0
+streamlit>=1.38.0
+plotly>=5.22.0
+pandas>=2.2.0
+numpy>=1.26.0
+cvxpy>=1.5.0
+python-dotenv>=1.0.0
+httpx>=0.27.0
+structlog>=24.1.0
+pytest>=8.0.0
+faker>=28.0.0
